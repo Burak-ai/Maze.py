@@ -124,7 +124,7 @@ class Maze():
 
         # Initialize frontier to just the starting position
         start = Node(state=self.start, parent=None, action=None)
-        # frontier = StackFrontier() #DFS goes to dead ends then other paths
+        # frontier = StackFrontier() 
         frontier = QueueFrontier() #BFS goes both ways
         frontier.add(start)
 
